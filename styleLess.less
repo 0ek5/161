@@ -1,0 +1,27 @@
+@main-font: monospace;
+
+.crosshair-cursor() {
+    cursor: crosshair;
+}
+
+.font() {
+    font-family: @main-font;
+}
+
+html {
+    .crosshair-cursor();
+    body {
+        .font();
+        a:hover,
+        .navbar:hover,
+        .btn:hover,
+        .button:hover,
+        .centered:hover,
+        .dropdown-menu:hover,
+        .dropdown-item:hover,
+        .dropdown-toggle:hover,
+        .dropdown:hover {
+            .crosshair-cursor(); 
+        }
+    }
+}

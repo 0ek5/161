@@ -1,0 +1,17 @@
+html {
+  cursor: crosshair;
+}
+html body {
+  font-family: monospace;
+}
+html body a:hover,
+html body .navbar:hover,
+html body .btn:hover,
+html body .button:hover,
+html body .centered:hover,
+html body .dropdown-menu:hover,
+html body .dropdown-item:hover,
+html body .dropdown-toggle:hover,
+html body .dropdown:hover {
+  cursor: crosshair;
+}

@@ -1,0 +1,154 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 17px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-fluid {
+    flex: 1;
+}
+
+footer {
+    height: 50px;
+}
+
+.top-logo {
+    max-height: 40px;
+    padding-right: 11px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.carousel {
+    width: 80%;
+    height: auto;
+}
+
+.carousel-inner img {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.scroll-box {
+    width: 35%;
+    margin: 10px auto;
+    padding: 10px;
+    height: 50px;
+    border: 0px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 25s linear infinite;
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.col-md-6 {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text {
+    font-size: 17px;
+    text-align: left;
+}
+
+.price {
+    font-size: 17px;
+    text-align: left;
+}
+
+.description {
+    font-size: 17px;
+    text-align: left;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 100px;
+}
+
+.btn {
+    padding: 10px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.size {
+    max-width: 100px;
+    height: auto;
+}
+
+.button {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+    border: solid 2px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg);
+    color: #000;
+    background-color: transparent;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+    border: solid 2px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+    color: #000;
+    background-color: transparent;
+}
